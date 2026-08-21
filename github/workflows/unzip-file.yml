@@ -1,0 +1,29 @@
+name: Extract Zip File
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'Kimi_Agent_MERIDIAN Energy Platform(6).zip'
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Extract zip file
+        run: |
+          unzip -o "Kimi_Agent_MERIDIAN Energy Platform(6).zip" -d extracted/
+      
+      - name: Commit extracted contents
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add extracted/
+          git commit -m "Extract Kimi_Agent_MERIDIAN Energy Platform contents" || echo "No changes to commit"
+          git push
