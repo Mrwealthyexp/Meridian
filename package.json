@@ -1,0 +1,43 @@
+{
+  "name": "meridian",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^6.x.x",
+    "react-hook-form": "^7.x.x",
+    "zod": "^3.x.x",
+    "recharts": "^2.x.x",
+    "lucide-react": "^latest",
+    "sonner": "^1.x.x",
+    "@radix-ui/react-dialog": "^1.x.x",
+    "@radix-ui/react-dropdown-menu": "^1.x.x",
+    "@radix-ui/react-select": "^1.x.x",
+    "@radix-ui/react-tabs": "^1.x.x",
+    "@radix-ui/react-tooltip": "^1.x.x",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.x.x",
+    "tailwind-merge": "^2.x.x"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x.x",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.x.x",
+    "@typescript-eslint/parser": "^7.x.x",
+    "@vitejs/plugin-react": "^4.x.x",
+    "autoprefixer": "^10.x.x",
+    "eslint": "^8.x.x",
+    "postcss": "^8.x.x",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.x.x",
+    "vite": "^5.x.x"
+  }
+}
